@@ -2,17 +2,20 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>自転車歩行者ナビ（東京23区）</title>
+  <title>自転車歩行者ナビ（東京23区）｜自転車走行可能な歩道を地図で確認</title>
 
-  <!-- AdSense 所有者確認コード（あなたのIDに合わせてください） -->
+  <!-- AdSense 所有者確認コード -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5595517533252298"
           crossorigin="anonymous"></script>
 
-  <meta name="description" content="東京23区のやむを得ない場合に自転車走行可能な歩道を地図上で確認できるWebアプリです。安全なルート選びをサポートします。">
+  <meta name="description" content="東京23区の自転車走行可能な歩道を地図で確認できるWebアプリ。道路交通法に基づく歩道走行の条件や注意点も解説し、安全な自転車移動をサポートします。">
 
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.7; }
-    img { width: 100%; max-width: 600px; margin: 20px 0; border-radius: 8px; }
+    body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.8; }
+    header { margin-bottom: 30px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #0078ff; }
+    h1, h2, h3 { color: #333; }
+    img { width: 100%; max-width: 650px; margin: 20px 0; border-radius: 8px; }
     a.button {
       display: inline-block;
       padding: 12px 20px;
@@ -21,30 +24,82 @@
       text-decoration: none;
       border-radius: 6px;
       font-size: 16px;
+      margin-top: 10px;
     }
+    footer { margin-top: 50px; font-size: 14px; color: #666; }
   </style>
 </head>
 
 <body>
 
+<header>
   <h1>自転車歩行者ナビ（東京23区）</h1>
+  <nav>
+    <a href="/">ホーム</a>
+    <a href="/jitensha-hokousya-navi/">アプリ</a>
+    <a href="#about">アプリ概要</a>
+    <a href="#law">歩道走行のルール</a>
+    <a href="#howto">使い方</a>
+    <a href="/jitensha-hokousya-navi/privacy.html">プライバシーポリシー</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+</header>
 
-  <p>
-    このサイトは、東京23区のやむを得ない場合に「自転車走行可能な歩道」を地図上で確認できる Web アプリです。  
-    自転車で安全に移動するためのルート選びをサポートします。
-  </p>
+<p>
+  「自転車歩行者ナビ」は、東京23区の中で <strong>やむを得ない場合に自転車走行が認められている歩道</strong> を地図上で確認できる Web アプリです。  
+  東京都オープンデータをもとに、青色ラインで「自転車走行可能な歩道」を視覚的に表示し、安全なルート選びをサポートします。
+</p>
 
-  <p>
-    <a class="button" href="/jitensha-hokousya-navi/">アプリを開く</a>
-  </p>
+<p>
+  <a class="button" href="/jitensha-hokousya-navi/">アプリを開く</a>
+</p>
 
-  <h2>アプリのスクリーンショット</h2>
-  <img src="/jitensha-hokousya-navi/splash1.png" alt="アプリ画面">
+<h2 id="about">アプリの概要</h2>
+<p>
+  東京23区では、交通量が多い道路や構造上危険な場所が多く、車道を走ることが難しいケースがあります。  
+  本アプリは、そうした状況で「どの歩道なら自転車で走行できるのか」を直感的に確認できるように設計されています。
+</p>
 
-  <h2>プライバシーポリシー</h2>
-  <p>
-    <a href="/jitensha-hokousya-navi/privacy.html">プライバシーポリシーはこちら</a>
-  </p>
+<img src="/jitensha-hokousya-navi/splash1.png" alt="アプリ画面">
+
+<h2 id="law">自転車が歩道を走れる条件（道路交通法）</h2>
+<p>
+  道路交通法第63条の4により、自転車は原則として車道を通行しますが、以下の場合は歩道を走行できます。
+</p>
+
+<ul>
+  <li>① 道路標識等で「自転車通行可」が指定されている場合</li>
+  <li>② 児童・幼児・高齢者が運転している場合</li>
+  <li>③ 車道の交通状況からやむを得ない場合</li>
+</ul>
+
+<p>
+  本アプリでは、東京都が公開している「自転車通行可の歩道データ」をもとに、該当区間を地図上に表示しています。
+</p>
+
+<h2 id="howto">アプリの使い方</h2>
+<p>
+  1. 「アプリを開く」ボタンを押すと地図が表示されます。<br>
+  2. 青色のラインが「自転車走行可能な歩道」です。<br>
+  3. 現在地ボタンを押すと、周辺の走行可能エリアを確認できます。<br>
+  4. スマホのホーム画面に追加するとアプリのように使えます。
+</p>
+
+<h2>開発の背景</h2>
+<p>
+  東京の自転車環境は年々改善されていますが、依然として「どこを走れば安全なのか」が分かりにくい状況が続いています。  
+  本アプリは、通勤・通学・買い物などで自転車を利用する方が、より安全に移動できるようにすることを目的として開発しました。
+</p>
+
+<h2 id="contact">お問い合わせ</h2>
+<p>
+  ご意見・ご要望がありましたら、以下のフォームからご連絡ください。<br>
+  <a href="https://docs.google.com/forms/" target="_blank">お問い合わせフォーム（Google Form）</a>
+</p>
+
+<footer>
+  <p>© 2026 自転車歩行者ナビ</p>
+</footer>
 
 </body>
 </html>
